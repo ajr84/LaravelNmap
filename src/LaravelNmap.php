@@ -2,7 +2,6 @@
 namespace LaravelNmap;
 
 use Symfony\Component\Process\Process;
-use Symfony\Component\Process\ProcessBuilder;
 
 class LaravelNmap
 {
@@ -41,7 +40,7 @@ class LaravelNmap
             } else {
                 $prefix = 'nmap';
             }
-            $this->process = new ProcessBuilder();
+            $this->process = new Process();
             $this->process->setPrefix($prefix);
 	}
         
