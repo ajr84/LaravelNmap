@@ -40,8 +40,7 @@ class LaravelNmap
             } else {
                 $prefix = 'nmap';
             }
-            $this->process = new Process();
-            $this->process->setPrefix($prefix);
+            $this->process = new Process($prefix);
 	}
         
         
